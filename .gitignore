@@ -221,3 +221,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# MR-Sleuthing outputs
+demo_output/
+outputs/
+data/

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mr-sleuthing"
+version = "0.1.0"
+description = "Reference-free, cross-architecture detection and Grad-CAM localization of deep-learning MRI reconstruction"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Aarav Shah" }, { name = "Ajay Sharma" }, { name = "Sairam Geethanath" }]
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0", "torchvision>=0.15", "numpy>=1.23", "scipy>=1.9", "nibabel>=4.0", "matplotlib>=3.6", "Pillow>=9.0"]
+
+[project.scripts]
+mr-sleuthing = "mr_sleuthing.cli:main"
+
+[tool.setuptools]
+packages = ["mr_sleuthing"]
